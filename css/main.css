@@ -1,3 +1,19 @@
-/*
- * Estilos de tu proyecto
- */
+.header {
+    background-image: #2c3e50;
+}
+
+.text-header {
+
+}
+
+.div-verde {
+    background-color: #18bc9c;
+    padding: 10px;
+    text-align: center;
+}
+
+.title {
+    font-family: Montserrat;
+    font-style: bold;
+    font-size: 20px;
+}
