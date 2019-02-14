@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <title>Freelancer</title>
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 </head>
 
 <body>
@@ -11,15 +12,17 @@
         <span class='title-header montserrat-extrabold'>START BOOTSTRAP</span>
     </header>
     <main>
-        <section class='div-verde'>
+        <section class='section-green'>
             <span><img src="assets/images/profile.png" alt="Imagem de Perfil" class='profile-image'></span>
             <h1 class='main-title montserrat-extrabold'>START BOOTSTRAP</h1>
-            <section class='symbol montserrat-extrabold'>&#8212 &#9733 &#8212</section>
+            <!--<hr class='symbol montserrat-extrabold'>
+                ::after
+        </hr>-->
             <!-- tá errado essa travessão né meninas, mas nao foca nisso agr-->
             <section class='functions'>Web Developer - Graphic Artist - User Experience Designer</section>
             </section>
-        <section class='portfolio'>
-            <h1 class='title-black montserrat-extrabold'>PORTFOLIO</h1>
+        <section class='section-white'>
+            <h1 class='title-blue montserrat-extrabold'>PORTFOLIO</h1>
             <section class='symbol-black montserrat-extrabold'>&#8212 &#9733 &#8212</section>
             <section class='imagens'>
                 <img src="assets/images/portfolio/cabin.png" alt="Cabana" class='portfolio-images'>
@@ -32,9 +35,31 @@
                 <img src="assets/images/portfolio/submarine.png" alt="Cabana" class='portfolio-images'>
             </section>
         </section>
-        <section class='div-verde'>
-            <h1 class='title-black montserrat-extrabold'>ABOUT</h1>
+        <section class='section-green'>
+            <h1 class='title-white montserrat-extrabold'>ABOUT</h1>
+            <table class='table'>
+                <tbody>
+                    <td>Freelancer is a free bootstrap theme created by Start Bootstrap. The download includes the coplete source files including HTML, CSS, and JavaScript as well as optional LESS stylesheets for easy customization.</td>
+                    <td>Whether you're a student looking to showcase your work, a professional looking to attract clients, or a graphic artist looking to share your projets, this template is the perfect starting point!</td>
+                </tbody>
+            </table>
         </section>
+        <section class='section-white'>
+            <h1 class='title-blue montserrat-extrabold'>CONTACT ME</h1>
+            <form action="">
+                <input type="text" name="Name" value='Name' class='input-form'><br />
+                <input type="email" name="Email" value='Email Address' class='input-form'><br />
+                <input type="tel" name="Phone" value='Phone Number' class='input-form'><br />
+                <textarea name="Message" cols="25" rows="5" value='Message' class='input-form'></textarea><br />
+                <input type="button" value="Send" class='button-form'>
+            </form>
+        </section>
+        <footer class='header'>
+            <nav>
+                <h1 class='small-white-title'> LOCATION</h1>
+                
+            </nav>
+        </footer>
     </main>
 </body>
 

@@ -12,7 +12,7 @@
     color: white;
 }
 
-.div-verde {
+.section-green {
     background-color: #18bc9c;
     padding: 70px;
     text-align: center;
@@ -42,7 +42,11 @@
 .symbol {
     font-style: bold;
     font-size: 30px;
-    color: white;    
+    color: white;
+}
+
+.symbol:after {
+  content: '\f005';
 }
 
 .symbol-black {
@@ -51,16 +55,21 @@
   color: black;    
 }
 
-.portfolio {
+.section-white {
   background-color: white;
   text-align: center;
   padding: 70px 0;
 }
 
-.title-black {
-  font-style: bold;
+.title-blue {
   font-size: 30px;
-  color: black;
+  color: #2c3e50;
+  text-align: center;
+}
+
+.title-white {
+  font-size: 30px;
+  color: white;
   text-align: center;
 }
 
@@ -70,4 +79,31 @@
   width: auto;
   height: auto;
   padding: 5px;
+}
+
+.table {
+  font-family: Lato;
+  font-size: 15px;
+  color: white;
+  width: 600px;
+  padding: 0 20px;
+}
+
+td {
+  padding: 0 10px;
+}
+
+.input-form {
+  font-family: Lato;
+  font-size: 20px;
+  color: #2c3e50 0.7;
+}
+
+.button-form {
+  font-family: Lato;
+  font-size: 20px;
+  color: white;
+  background-color: #18bc9c;
+  padding: 13px 40px;
+  border-radius: 10px;
 }
