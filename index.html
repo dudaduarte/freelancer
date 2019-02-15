@@ -3,28 +3,39 @@
 <head>
     <meta charset="utf-8">
     <title>Freelancer</title>
+    <link href="https://fonts.googleapis.com/css?family=Lato|Montserrat:700" rel="stylesheet">
     <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 </head>
 
 <body>
     <header class='header'>
-        <span class='title-header montserrat-extrabold'>START BOOTSTRAP</span>
+        <span class='title-header montserrat'>START BOOTSTRAP</span>
+        <span class='nav-header montserrat'>
+            <span class='item-nav'>
+                PORTFOLIO
+            </span>
+            <span class='item-nav'>
+                ABOUT
+            </span>
+            <span class='item-nav'>
+                CONTACT
+            </span>
+        </span>
     </header>
     <main>
         <section class='section-green'>
             <span><img src="assets/images/profile.png" alt="Imagem de Perfil" class='profile-image'></span>
-            <h1 class='main-title montserrat-extrabold'>START BOOTSTRAP</h1>
-            <!--<hr class='symbol montserrat-extrabold'>
-                ::after
-        </hr>-->
-            <!-- tá errado essa travessão né meninas, mas nao foca nisso agr-->
+            <h1 class='main-title montserrat'>START BOOTSTRAP</h1>
+            <hr class='symbol s-white'>
             <section class='functions'>Web Developer - Graphic Artist - User Experience Designer</section>
-            </section>
+        </section>
         <section class='section-white'>
-            <h1 class='title-blue montserrat-extrabold'>PORTFOLIO</h1>
-            <section class='symbol-black montserrat-extrabold'>&#8212 &#9733 &#8212</section>
+            <h1 class='title-blue montserrat'>PORTFOLIO</h1>
+            <hr class='symbol s-blue'>
             <section class='imagens'>
+                <!-- será que precisa mesmo dessa classe?-->
                 <img src="assets/images/portfolio/cabin.png" alt="Cabana" class='portfolio-images'>
                 <img src="assets/images/portfolio/cake.png" alt="Cabana" class='portfolio-images'>
                 <img src="assets/images/portfolio/circus.png" alt="Cabana" class='portfolio-images'>
@@ -36,29 +47,54 @@
             </section>
         </section>
         <section class='section-green'>
-            <h1 class='title-white montserrat-extrabold'>ABOUT</h1>
-            <table class='table'>
-                <tbody>
-                    <td>Freelancer is a free bootstrap theme created by Start Bootstrap. The download includes the coplete source files including HTML, CSS, and JavaScript as well as optional LESS stylesheets for easy customization.</td>
-                    <td>Whether you're a student looking to showcase your work, a professional looking to attract clients, or a graphic artist looking to share your projets, this template is the perfect starting point!</td>
-                </tbody>
-            </table>
+            <h1 class='title-white montserrat'>ABOUT</h1>
+            <hr class='symbol s-white'>
+            <div class='text-about'>
+                <p class='paragraph'>Freelancer is a free bootstrap theme created by Start Bootstrap. The download includes the coplete
+                    source files including HTML, CSS, and JavaScript as well as optional LESS stylesheets for easy
+                    customization.</p>
+                <p class='paragraph'>Whether you're a student looking to showcase your work, a professional looking to attract clients, or
+                    a graphic artist looking to share your projets, this template is the perfect starting point!</p>
+            </div>
         </section>
         <section class='section-white'>
-            <h1 class='title-blue montserrat-extrabold'>CONTACT ME</h1>
+            <h1 class='title-blue montserrat'>CONTACT ME</h1>
+            <hr class='symbol s-blue'>
             <form action="">
-                <input type="text" name="Name" value='Name' class='input-form'><br />
-                <input type="email" name="Email" value='Email Address' class='input-form'><br />
-                <input type="tel" name="Phone" value='Phone Number' class='input-form'><br />
-                <textarea name="Message" cols="25" rows="5" value='Message' class='input-form'></textarea><br />
-                <input type="button" value="Send" class='button-form'>
+                <input type="name" name="Name" class='input-name form' placeholder='Name'><br />
+                <input type="email" name="Email" class='input-email form' placeholder='Email Address'><br />
+                <input type="tel" name="Phone" class='input-phone form' placeholder='Phone Number'><br />
+                <textarea name="Message" cols="25" rows="5" class='input-message form'
+                    placeholder='Message'></textarea><br />
             </form>
+            <div>
+                <input type="button" value="Send" class='button-form'>
+            </div>
         </section>
-        <footer class='header'>
-            <nav>
-                <h1 class='small-white-title'> LOCATION</h1>
-                
-            </nav>
+        <footer class='header footer'>
+                <div class='div-footer'>
+                    <h1 class='small-white-title montserrat'> LOCATION</h1>
+                    <p>3481 Melrose Place</p>
+                    <p>Beverly Hills, CA 90210</p>
+                </div>
+                <div class='div-footer'>
+                    <h1 class='small-white-title montserrat'>AROUND THE WEB</h1>
+                    <p class='around-web'>
+                        <i class="fab fa-facebook-f icon"></i>
+                        <i class="fab fa-google-plus-g icon"></i>
+                        <i class="fab fa-twitter icon"></i>
+                        <i class="fab fa-linkedin-in icon"></i>
+                        <i class="fab fa-dribbble icon"></i>
+                    </p>
+                </div>
+                <div class='div-footer'>
+                    <h1 class='small-white-title montserrat'>ABOUT FREELANCER</h1>
+                    <p>Freelance is a free to use, open source Bootstrap theme created by <a href="#">Start
+                            Bootstrap</a>.</p>
+                </div>
+            <div class='copyright'>
+                Copyright - Your Website 2017
+            </div>
         </footer>
     </main>
 </body>
