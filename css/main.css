@@ -118,7 +118,7 @@ hr.s-blue:after {
 
 .functions {
   padding: 2vw 0 0;
-  font-size: 30px !important;
+  font-size: 25px !important;
 }
 
 .lato-20 {
@@ -144,7 +144,6 @@ hr.s-blue:after {
 
 .portfolio-images {
   max-width: 22vw;
-  max-height: 22vw;
   padding: 0.6vw;
 }
 
