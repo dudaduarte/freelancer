@@ -10,32 +10,31 @@
 </head>
 
 <body>
-    <header class='header'>
-        <span class='title-header montserrat'>START BOOTSTRAP</span>
-        <span class='nav-header montserrat'>
+    <header class='section-blue flex-container header montserrat'>
+        <span class='title-header'>START BOOTSTRAP</span>
+        <nav class='nav-header'>
             <span class='item-nav'>
-                PORTFOLIO
+                <a href="#">PORTFOLIO</a>
             </span>
             <span class='item-nav'>
-                ABOUT
+                <a href="##">ABOUT</a>
             </span>
             <span class='item-nav'>
-                CONTACT
+                <a href="###">CONTACT</a>
             </span>
-        </span>
+        </nav>
     </header>
     <main>
         <section class='section-green'>
-            <span><img src="assets/images/profile.png" alt="Imagem de Perfil" class='profile-image'></span>
+            <img src="assets/images/profile.png" alt="Imagem de Perfil" class='profile-image'>
             <h1 class='main-title montserrat'>START BOOTSTRAP</h1>
             <hr class='symbol s-white'>
-            <section class='functions'>Web Developer - Graphic Artist - User Experience Designer</section>
+            <section class='lato-20 functions'>Web Developer - Graphic Artist - User Experience Designer</section>
         </section>
         <section class='section-white'>
             <h1 class='title-blue montserrat'>PORTFOLIO</h1>
             <hr class='symbol s-blue'>
-            <section class='imagens'>
-                <!-- será que precisa mesmo dessa classe?-->
+            <section>
                 <img src="assets/images/portfolio/cabin.png" alt="Cabana" class='portfolio-images'>
                 <img src="assets/images/portfolio/cake.png" alt="Cabana" class='portfolio-images'>
                 <img src="assets/images/portfolio/circus.png" alt="Cabana" class='portfolio-images'>
@@ -49,54 +48,56 @@
         <section class='section-green'>
             <h1 class='title-white montserrat'>ABOUT</h1>
             <hr class='symbol s-white'>
-            <div class='text-about'>
-                <p class='paragraph'>Freelancer is a free bootstrap theme created by Start Bootstrap. The download includes the coplete
+            <div class='lato-20 text-about flex-container'>
+                <p class='paragraph'>Freelancer is a free bootstrap theme created by Start Bootstrap. The download
+                    includes the coplete
                     source files including HTML, CSS, and JavaScript as well as optional LESS stylesheets for easy
                     customization.</p>
-                <p class='paragraph'>Whether you're a student looking to showcase your work, a professional looking to attract clients, or
+                <p class='paragraph'>Whether you're a student looking to showcase your work, a professional looking to
+                    attract clients, or
                     a graphic artist looking to share your projets, this template is the perfect starting point!</p>
             </div>
+            <div class='download-theme'><a href="####"><i class="fas fa-download"></i> Download Theme</a></div>
         </section>
         <section class='section-white'>
             <h1 class='title-blue montserrat'>CONTACT ME</h1>
             <hr class='symbol s-blue'>
-            <form action="">
-                <input type="name" name="Name" class='input-name form' placeholder='Name'><br />
-                <input type="email" name="Email" class='input-email form' placeholder='Email Address'><br />
-                <input type="tel" name="Phone" class='input-phone form' placeholder='Phone Number'><br />
-                <textarea name="Message" cols="25" rows="5" class='input-message form'
-                    placeholder='Message'></textarea><br />
+            <form>
+                <input type="name" name="Name" class='form' placeholder='Name'><br />
+                <input type="email" name="Email" class='form' placeholder='Email Address'><br />
+                <input type="tel" name="Phone" class='form' placeholder='Phone Number'><br />
+                <textarea name="Message" cols="25" rows="5" class='form' placeholder='Message'></textarea><br />
             </form>
             <div>
-                <input type="button" value="Send" class='button-form'>
+                <input type="button" value="Send" class='button-form lato-20'>
             </div>
         </section>
-        <footer class='header footer'>
-                <div class='div-footer'>
-                    <h1 class='small-white-title montserrat'> LOCATION</h1>
-                    <p>3481 Melrose Place</p>
-                    <p>Beverly Hills, CA 90210</p>
-                </div>
-                <div class='div-footer'>
-                    <h1 class='small-white-title montserrat'>AROUND THE WEB</h1>
-                    <p class='around-web'>
-                        <i class="fab fa-facebook-f icon"></i>
-                        <i class="fab fa-google-plus-g icon"></i>
-                        <i class="fab fa-twitter icon"></i>
-                        <i class="fab fa-linkedin-in icon"></i>
-                        <i class="fab fa-dribbble icon"></i>
-                    </p>
-                </div>
-                <div class='div-footer'>
-                    <h1 class='small-white-title montserrat'>ABOUT FREELANCER</h1>
-                    <p>Freelance is a free to use, open source Bootstrap theme created by <a href="#">Start
-                            Bootstrap</a>.</p>
-                </div>
-            <div class='copyright'>
-                Copyright - Your Website 2017
-            </div>
-        </footer>
     </main>
+    <footer class='section-blue footer flex-container lato-20'>
+        <div class='div-footer'>
+            <h1 class='small-white-title montserrat'> LOCATION</h1>
+            <p>3481 Melrose Place</p>
+            <p>Beverly Hills, CA 90210</p>
+        </div>
+        <div class='div-footer'>
+            <h1 class='small-white-title montserrat'>AROUND THE WEB</h1>
+            <p class='around-web'>
+                <a href="#"><i class="fab fa-facebook-f icon"></i></a>
+                <a href="#"><i class="fab fa-google-plus-g icon"></i></a>
+                <a href="#"><i class="fab fa-twitter icon"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in icon"></i></a>
+                <a href="#"><i class="fab fa-dribbble icon"></i></a>
+            </p>
+        </div>
+        <div class='div-footer'>
+            <h1 class='small-white-title montserrat'>ABOUT FREELANCER</h1>
+            <p class='link-sb'>Freelance is a free to use, open source Bootstrap theme created by <a href="#">Start
+                    Bootstrap</a>.</p>
+        </div>
+        <div class='copyright'>
+            Copyright - Your Website 2017
+        </div>
+    </footer>
 </body>
 
 </html>

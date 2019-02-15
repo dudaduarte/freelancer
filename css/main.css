@@ -3,21 +3,28 @@ body {
   font-family: 'Lato', sans-serif;
 }
 
+.flex-container {
+  display: flex;
+}
+
 .header {
-    background-color: #2c3e50;
-    padding: 25px;
-    position: relative;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.section-blue {
+  background-color: #2c3e50;
+  padding: 25px;
 }
 
 .nav-header {
-  font-size: 15px;
-  color: white;
-  position: absolute;
-  right: 40px;
+  margin: 0 20px 0 0;
 }
 
 .item-nav {
-  padding: 0 5px;
+  padding: 0 1vw;
+  font-size: 20px;
+  color: white;
 }
 
 .montserrat {
@@ -25,63 +32,59 @@ body {
 }
 
 .title-header {
-    font-size: 30px;
-    color: white;
-    padding: 0 10vw;
+  font-size: 30px;
+  color: white;
+  padding: 0 0 0 10vw;
 }
 
 .section-green {
-    background-color: #18bc9c;
-    padding: 70px;
-    text-align: center;
+  background-color: #18bc9c;
+  padding: 4vw 7vw 7vw;
+  text-align: center;
 }
 
-.functions {
-  font-family: Lato;
-  font-style: bold;
-  font-size: 20px;
-  color: white;
+.section-white {
+  background-color: white;
+  text-align: center;
+  padding: 4vw 7vw 7vw;
 }
 
 .main-title {
-    font-style: bold;
-    font-size: 70px;
-    color: white;
+  font-style: bold;
+  font-size: 80px;
+  color: white;
 }
 
 .profile-image {
-    max-width:60vw;
-    max-height:60vw;
-    width: auto;
-    height: auto;
-    padding: 0 0 0;
+  max-width:60vw;
+  max-height:60vw;
 }
 
 .symbol {
-    width: 150px;
-    text-align: center;
-    border: none;
-    overflow: visible;
+  width: 15vw;
+  text-align: center;
+  border: none;
+  overflow: visible;
 }
 
 .s-white {
-    color: white;
-    border-top: 3.5px solid white;
+  color: white;
+  border-top: 4px solid white;
 }
 
 .s-blue {
   color: #2c3e50;
-  border-top: 3.5px solid #2c3e50;
+  border-top: 4px solid #2c3e50;
 }
 
 hr.symbol:after {
   font-family:"Font Awesome 5 Free";
   font-weight: 900;
   content: '\f005';
-  font-size: 25px;
-  padding: 5px;
+  font-size: 35px;
+  padding: 8px;
   position: relative;
-  top: -14px;
+  top: -19px;
 }
 
 hr.s-white:after {
@@ -94,12 +97,6 @@ hr.s-blue:after {
 
 .symbol-black {
   color: black;    
-}
-
-.section-white {
-  background-color: white;
-  text-align: center;
-  padding: 70px 0;
 }
 
 .title-blue {
@@ -115,43 +112,56 @@ hr.s-blue:after {
 }
 
 .text-about {
-  display: flex;
   justify-content: center;
+  text-align: left;
+}
+
+.functions {
+  padding: 2vw 0 0;
+  font-size: 30px !important;
+}
+
+.lato-20 {
   font-family: Lato;
   font-size: 20px;
   color: white;
-  text-align: left;
+}
+
+.download-theme {
+  border: 2px solid white;
+  border-radius: 10px;
+  width: 14vw;
+  padding: 15px;
+  color: white;
+  margin: 25px auto auto;
 }
 
 .paragraph {
   padding: 0 1vw;
-  width: 25vw;
+  width: 20vw;
+  line-height: 30px;
 }
 
 .portfolio-images {
-  max-width: 300px;
-  max-height: 300px;
-  width: auto;
-  height: auto;
+  max-width: 22vw;
+  max-height: 22vw;
   padding: 0.6vw;
 }
 
 .form {
   font-family: Lato;
-  font-size: 20px;
+  font-size: 25px;
   color: rgba(71, 71, 71, 0.7);;
   border: none;
-  border-bottom: 1px solid rgba(71, 71, 71, 0.1);
-  width: 450px;
-  padding: 15px;
+  border-bottom: 1.5px solid rgba(168, 168, 168, 0.2);
+  width: 35vw;
+  padding: 25px;
   text-align: left;
   resize: none;
+  outline:none;
 }
 
 .button-form {
-  font-family: Lato;
-  font-size: 20px;
-  color: white;
   background-color: #18bc9c;
   padding: 17px 30px;
   border-radius: 10px;
@@ -159,7 +169,7 @@ hr.s-blue:after {
 }
 
 .div-footer {
-  width: 330px;
+  width: 340px;
   max-height: 300px;
   text-align: center;
 }
@@ -169,13 +179,10 @@ hr.s-blue:after {
 }
 
 .footer {
-  font-family: Lato;
-  font-size: 20px;
-  color: white;
   overflow: auto;
-  display: flex;
   justify-content: space-evenly;
-  padding: 5vw;
+  padding: 4vw;
+  position: relative;
 }
 
 .copyright {
@@ -183,9 +190,28 @@ hr.s-blue:after {
   bottom: 10px;
 }
 
+nav.nav-header a:link, nav.nav-header a:visited, div.download-theme a:link, p.around-web a:link, p.around-web a:visited {
+  text-decoration: none;
+  color: white;
+}
+
+nav.nav-header a:hover, p.around-web a:hover {
+  color: #18bc9c;
+}
+
+p.link-sb a:link, p.link-sb a:visited {
+  text-decoration: none;
+  color: #18bc9c;
+}
+
+p.link-sb a:hover {
+  color: #18bc9c;
+  text-decoration: underline;
+}
+
 .icon {
   margin: 5px;
-  padding: 20px;
+  padding: 1vw;
   display: inline-block;
   width: 20px;
   height: 20px;
